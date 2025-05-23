@@ -16,4 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+})->middleware('auth:sanctum');
+
+
+Route::prefix('pengumpulan')->group(function () {
+    Route::get('/', [App\Http\Controllers\PengumpulanRest::class, 'index'])->name('pengumpulan.index');
+    Route::post('/', [App\Http\Controllers\PengumpulanRest::class, 'store'])->name('pengumpulan.store');
+    Route::get('/{id}', [App\Http\Controllers\PengumpulanRest::class, 'show'])->name('pengumpulan.show');
+    Route::put('/{id}', [App\Http\Controllers\PengumpulanRest::class, 'update'])->name('pengumpulan.update');
+    Route::delete('/{id}', [App\Http\Controllers\PengumpulanRest::class, 'destroy'])->name('pengumpulan.destroy');
 });
