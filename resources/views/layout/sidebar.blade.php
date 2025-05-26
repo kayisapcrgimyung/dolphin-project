@@ -14,7 +14,7 @@
                         </li>
                         
                         <li>
-                            <a href="{{route('menu.index')}}"><img src="{{asset('assets/img/sidebar/icon-8.png')}}" alt="icon"> <span>Menu</span></a>
+                            <a href="{{route('menu.index')}}"><img src="{{asset('assets/img/sidebar/icon-8.png')}}" alt="icon"> <span>Nilai</span></a>
                         </li>
                         
                         <li>

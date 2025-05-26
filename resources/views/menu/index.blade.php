@@ -13,7 +13,7 @@
                 <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="page-title">
-                            Menu
+                            Nilai
                         </div>
                     </div>
                     <div class="col-sm-6 text-sm-right">
